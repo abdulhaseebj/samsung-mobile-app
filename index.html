@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./dist/style.css">
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- sweet alert link -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar-input {
+        transition: all .9s ease;
+    }
+</style>
+
+<body>
+    <!-- navbar area start -->
+    <div class="navbar">
+        <div class="bg-[#388bf8] h-7 w-full">
+        </div>
+        <div class="flex justify-between bg-[#38bdf8] w-full h-[60px] items-center ">
+            <h3 class="text-white font-bold text-sm md:text-2xl  ml-5 tracking-[0px] font-mono">GALAXY's STORE</h3>
+            <input class="  rounded-lg p-[4px] md:p-[8px] w-[200px] sm:w-[280px] lg:w-[360px] navbar-input " type="text"
+                placeholder="Searh...">
+            <div class="flex">
+                <button
+                    class="border-solid border-2 border-white bg-white text-[#38bdf8] md:text-lg md:py-[5px] md:px-[20px] py-[2px] px-[10px] rounded-lg mr-2 hidden sm:block">Login</button>
+                <button
+                    class="border-solid border-[1px] border-white bg-[#38bdf8] text-white md:text-lg md:py-[5px] md:px-[15px] py-[2px] px-[10px] rounded-lg mr-6 hidden sm:block">Register</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- navbar area end -->
+    <img class="" src="https://www.mansworldindia.com/wp-content/uploads/2017/03/samsung-galaxy-s8.jpg" alt="">
+    <!-- card area start -->
+    <div id="card" class="flex flex-wrap items-center justify-around p-[30px] gap-[20px]">
+      
+
+    </div>
+    <!-- card area end -->
+    <button
+        class="items-center bg-[#38bdf8] py-[10px] pr-[70px] pl-[10px] rounded-xl text-xl font-black text-white hover:bg-[#3882f8]"
+        onclick="goToCart()">go to card</button>
+
+
+
+    <!-- javascript link -->
+    <script src="app.js"></script>
+</body>
+
+</html>
