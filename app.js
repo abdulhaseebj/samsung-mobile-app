@@ -85,7 +85,7 @@ const phones = [
     {
         brand: 'Samsung',
         img: "./assets/a73.webp",
-        model: 'A 73',
+        model: 'A73',
         ram: 8,
         rom: 256,
         camera: '20 megapixel',
@@ -115,9 +115,9 @@ const phones = [
 for (let i = 0; i < phones.length; i++) {
     div.innerHTML += `<div class="container">
     <img class="images" src="${phones[i].img}">
-    <h3 class="model">Model: ${phones[i].model}</h3>
-    <h3 class="ram">Ram: ${phones[i].ram}</h3>
-    <h3 class="rom">Rom: ${phones[i].rom}</h3>
+    <h3 >${phones[i].brand} ${phones[i].model}</h3>
+    <h3 >Memory: ${phones[i].ram}/${phones[i].rom}</h3>
+    
    
     <h3 class="price">Price: ${phones[i].price} </h3>
     <button class="bg-sky-400 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded " onclick="cartButton(${i})">Add to cart</button>

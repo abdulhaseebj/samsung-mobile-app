@@ -17,7 +17,7 @@ function renderCart() {
         div.innerHTML += `<div class="container ">
        
         <img class="images" src="${cartArr[i].img}">
-        <h3 class="model">Model: ${cartArr[i].model}</h3>
+        <h3 >${cartArr[i].brand} ${cartArr[i].model}</h3>
        
         <h3 class="price">Price: ${cartArr[i].price} </h3>
         <h3 class="quantity">Quantity: ${cartArr[i].quantity}</h3>
