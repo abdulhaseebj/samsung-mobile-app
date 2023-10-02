@@ -3,7 +3,7 @@ const div = document.querySelector('#card');
 const phones = [
     {
         brand: 'Samsung',
-        img: "./assets/note 20.png",
+        img: "./assets/note 20.webp",
         model: 'Note 20',
         ram: 12,
         rom: 256,
@@ -12,7 +12,7 @@ const phones = [
     },
     {
         brand: 'Samsung',
-        img: "./assets/download-removebg-preview.png",
+        img: "./assets/a 53.webp",
         model: 'A53',
         ram: 8,
         rom: 128,
@@ -21,7 +21,7 @@ const phones = [
     },
     {
         brand: 'Samsung',
-        img: "./assets/ao4-removebg-preview.png",
+        img: "./assets/a04.webp",
         model: 'A04',
         ram: 12,
         rom: 512,
@@ -30,7 +30,7 @@ const phones = [
     },
     {
         brand: 'Samsung',
-        img: "./assets/a24-removebg-preview.png",
+        img: "./assets/a24.webp",
         model: 'A24',
         ram: 4,
         rom: 64,
@@ -39,7 +39,7 @@ const phones = [
     },
     {
         brand: 'Samsung',
-        img: "./assets/s22-removebg-preview.png",
+        img: "./assets/s22.webp",
         model: 'S22',
         ram: 12,
         rom: 256,
@@ -48,7 +48,7 @@ const phones = [
     },
     {
         brand: 'Samsung',
-        img: "./assets/s23ultra-removebg-preview.png",
+        img: "./assets/a23.webp",
         model: 'S23 ultra',
         ram: 8,
         rom: 128,
@@ -57,7 +57,7 @@ const phones = [
     },
     {
         brand: 'Samsung',
-        img: "./assets/note_10-removebg-preview.png",
+        img: "./assets/note 10.webp",
         model: 'Note 10',
         ram: 4,
         rom: 64,
@@ -66,8 +66,44 @@ const phones = [
     },
     {
         brand: 'Samsung',
-        img: "./assets/f13-removebg-preview.png",
+        img: "./assets/f13.webp",
         model: 'F13',
+        ram: 8,
+        rom: 256,
+        camera: '20 megapixel',
+        price: 189999,
+    },
+    {
+        brand: 'Samsung',
+        img: "./assets/a34.webp",
+        model: 'A34',
+        ram: 8,
+        rom: 256,
+        camera: '20 megapixel',
+        price: 189999,
+    },
+    {
+        brand: 'Samsung',
+        img: "./assets/a73.webp",
+        model: 'A 73',
+        ram: 8,
+        rom: 256,
+        camera: '20 megapixel',
+        price: 189999,
+    },
+    {
+        brand: 'Samsung',
+        img: "./assets/fold.webp",
+        model: 'Galaxy Z Flip 4',
+        ram: 8,
+        rom: 256,
+        camera: '20 megapixel',
+        price: 189999,
+    },
+    {
+        brand: 'Samsung',
+        img: "./assets/a13.webp",
+        model: 'A13',
         ram: 8,
         rom: 256,
         camera: '20 megapixel',
@@ -77,17 +113,18 @@ const phones = [
 ]
 
 for (let i = 0; i < phones.length; i++) {
-    div.innerHTML += `<div class="border-2 p-[30px]">
-    <h2 class="brand"> ${phones[i].brand}</h2>
-    <img class="w-[200px]" src="${phones[i].img}">
+    div.innerHTML += `<div class="container">
+    <img class="images" src="${phones[i].img}">
     <h3 class="model">Model: ${phones[i].model}</h3>
     <h3 class="ram">Ram: ${phones[i].ram}</h3>
     <h3 class="rom">Rom: ${phones[i].rom}</h3>
-    <h3 class="camera">Camera: ${phones[i].camera}</h3>
+   
     <h3 class="price">Price: ${phones[i].price} </h3>
-    <button class=" bg-[#38bdf8] py-[10px] pr-[70px] pl-[10px] rounded-xl text-xl font-black text-white hover:bg-[#3882f8]"onclick="cartButton(${i})">Add to cart</button>
+    <button class="bg-sky-400 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded " onclick="cartButton(${i})">Add to cart</button>
 
     </div>`
+  
+
 
 }
 
@@ -102,7 +139,7 @@ function cartButton(index) {
                 Swal.fire({
                     position: 'top-end',
                     icon: 'success',
-                    title: 'Item selected',
+                    title: 'Item Again Added To Cart',
                     showConfirmButton: false,
                     timer: 1500
                 })
@@ -117,7 +154,7 @@ function cartButton(index) {
         Swal.fire({
             position: 'top-end',
             icon: 'success',
-            title: 'Item selected',
+            title: 'Item Added To Cart',
             showConfirmButton: false,
             timer: 1500
         })

@@ -1,0 +1,19 @@
+.container{
+    background: #ffff;
+    padding: 20px;
+    margin-top: 15px;
+    font-size: 15px;
+    
+}
+
+.images {
+    width: 160px;
+    height: auto;
+}
+.card-btn{
+    background: rgb(56 189 248 / var(--tw-bg-opacity));
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffff;
+    padding: 5px 20px 5px 20px;
+}
