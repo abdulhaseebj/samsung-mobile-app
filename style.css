@@ -16,4 +16,43 @@
     font-weight: 700;
     color: #ffff;
     padding: 5px 20px 5px 20px;
+    
+}
+.quantity-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+   
+}
+.quantity{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.brand{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+.cart-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.div{
+    text-align: center;
+}
+.price{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.decrease-btn{
+    padding: 0px 8px 0px 8px;
 }

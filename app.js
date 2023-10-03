@@ -72,6 +72,7 @@ const phones = [
         rom: 256,
         camera: '20 megapixel',
         price: 189999,
+        dis: 179999,
     },
     {
         brand: 'Samsung',
@@ -94,7 +95,7 @@ const phones = [
     {
         brand: 'Samsung',
         img: "./assets/fold.webp",
-        model: 'Galaxy Z Flip 4',
+        model: 'Galaxy Z Flip',
         ram: 8,
         rom: 256,
         camera: '20 megapixel',
@@ -115,20 +116,25 @@ const phones = [
 for (let i = 0; i < phones.length; i++) {
     div.innerHTML += `<div class="container">
     <img class="images" src="${phones[i].img}">
-    <h3 >${phones[i].brand} ${phones[i].model}</h3>
-    <h3 >Memory: ${phones[i].ram}/${phones[i].rom}</h3>
-    
-   
-    <h3 class="price">Price: ${phones[i].price} </h3>
-    <button class="bg-sky-400 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded " onclick="cartButton(${i})">Add to cart</button>
+   <div class="div">
+   <h3 class="brand">${phones[i].brand} ${phones[i].model}</h3>
+   <h3 class="brand" >Memory: ${phones[i].ram}/${phones[i].rom}</h3>
+   <h3 class="brand">Price: ${phones[i].price} </h3>
+   </div>
+   <div class="cart-div">
+   <button class="bg-sky-400 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded " onclick="cartButton(${i})">Add to cart</button>
+   </div>
 
     </div>`
   
 
 
 }
+const data = localStorage.getItem('addItem')
+const add = JSON.parse(data)
+console.log(add);
 
-let cartArr = []
+let cartArr = [...add]
 
 function cartButton(index) {
 
