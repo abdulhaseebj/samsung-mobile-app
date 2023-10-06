@@ -122,11 +122,11 @@ for (let i = 0; i < phones.length; i++) {
    <h3 class="brand">Price: ${phones[i].price} </h3>
    </div>
    <div class="cart-div">
-   <button class="bg-sky-400 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded " onclick="cartButton(${i})">Add to cart</button>
+   <button class="bg-sky-400 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded button " onclick="cartButton(${i})">Add to cart</button>
    </div>
 
     </div>`
-  
+
 
 
 }
@@ -134,14 +134,21 @@ const data = localStorage.getItem('addItem')
 const add = JSON.parse(data)
 console.log(add);
 
-let cartArr = [...add]
+let cartArr;
+if (Array.isArray(add)) {
+
+    cartArr = [...add]
+
+} else {
+    cartArr = []
+}
 
 function cartButton(index) {
 
     if (cartArr.includes(phones[index])) {
         for (let i = 0; i < cartArr.length; i++) {
             if (cartArr[i] === phones[index]) {
-                cartArr[i].quantity += 1 
+                cartArr[i].quantity += 1
                 Swal.fire({
                     position: 'top-end',
                     icon: 'success',
@@ -171,7 +178,7 @@ function cartButton(index) {
 
 
 function goToCart() {
-    window.location = "./cart.html"
+    window.location = "./cart.html "
     const addArry = JSON.stringify(cartArr)
     localStorage.setItem('addItem', addArry)
 }

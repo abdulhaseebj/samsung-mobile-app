@@ -17,7 +17,7 @@ const totalAmounts = document.querySelector('.total-amount');
 
 function renderCart() {
     let totalAmount = 0;
-    totalAmount.innerHTML = '';
+    totalAmount.innerHTML = ''
     if (cartArr.length > 0) {
         for (let i = 0; i < cartArr.length; i++) {
             totalAmount += cartArr[i].price * cartArr[i].quantity
@@ -29,8 +29,8 @@ function renderCart() {
             <div class="quantity-div">
             <h3 class="quantity">Quantity : ${cartArr[i].quantity}</h3>
            <div class="">
-           <button class="text-xl bg-sky-400 hover:bg-sky-600 text-white font-bold  rounded decrease-btn " onclick="increaseQuantity(${i})">+</button>
-           <button class="text-xl bg-sky-400 hover:bg-sky-600 text-white font-bold  rounded decrease-btn "onclick="decreaseQuantity(${i})">-</button>
+           <button class="text-xl bg-sky-400 hover:bg-sky-600 text-white font-bold  rounded decrease-btn button" onclick="increaseQuantity(${i})">+</button>
+           <button class="text-xl bg-sky-400 hover:bg-sky-600 text-white font-bold  rounded decrease-btn button"onclick="decreaseQuantity(${i})">-</button>
            </div>
             </div>
          

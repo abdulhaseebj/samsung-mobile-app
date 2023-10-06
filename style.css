@@ -1,3 +1,6 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
 .container{
     background: #ffff;
     padding: 20px;
@@ -55,4 +58,16 @@
 }
 .decrease-btn{
     padding: 0px 8px 0px 8px;
+}
+
+.button{
+    transition: all ease 0.7s;
+}
+.button:active{
+    scale: 0.12;
+}
+
+
+.navbar-input {
+    transition: all .9s ease;
 }
