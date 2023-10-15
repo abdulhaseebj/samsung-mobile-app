@@ -71,3 +71,18 @@ body {
 .navbar-input {
     transition: all .9s ease;
 }
+.input{
+    padding: 10px 120px 5px 5px;
+}
+.input-icon {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    margin-top: 8px;
+}
