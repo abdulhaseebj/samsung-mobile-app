@@ -132,7 +132,7 @@ for (let i = 0; i < phones.length; i++) {
 }
 const data = localStorage.getItem('addItem')
 const add = JSON.parse(data)
-console.log(add);
+// console.log(add);
 
 let cartArr;
 if (Array.isArray(add)) {
@@ -172,7 +172,7 @@ function cartButton(index) {
             timer: 1500
         })
     }
-    console.log(cartArr);
+    // console.log(cartArr);
 
 }
 

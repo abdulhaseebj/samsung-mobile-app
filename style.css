@@ -72,7 +72,8 @@ body {
     transition: all .9s ease;
 }
 .input{
-    padding: 10px 120px 5px 5px;
+    padding: 5px;
+    width: 300px;
 }
 .input-icon {
     position: relative;
@@ -86,3 +87,8 @@ body {
     cursor: pointer;
     margin-top: 8px;
 }
+.signup-main{
+    margin-top: calc(30px * 2);
+    margin-bottom: calc(77px * 2);
+}
+  

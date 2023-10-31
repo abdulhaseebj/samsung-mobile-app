@@ -7,7 +7,7 @@ function back() {
 
 const data = localStorage.getItem('addItem')
 const cartArr = JSON.parse(data)
-console.log(cartArr);
+// console.log(cartArr);
 
 
 
@@ -39,7 +39,7 @@ function renderCart() {
             </div>
           
             </div>`
-            totalAmounts.innerHTML = `<span>Total Amount</span> : ${totalAmount}`
+            totalAmounts.innerHTML = `<span>Total Amount</span> : ${totalAmount.toLocaleString()}`
         }
     } else {
         div.innerHTML = `  <h2>No item found</h2>`
